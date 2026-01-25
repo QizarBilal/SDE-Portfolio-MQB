@@ -112,16 +112,36 @@ const ExperienceSection = () => {
         </motion.div>
 
         {/* Experience Cards */}
-        <div className="space-y-8">
+        <div className="space-y-8 relative">
+          {/* Timeline line */}
+          <motion.div 
+            className="absolute left-0 top-0 w-[2px] bg-gradient-to-b from-accent-green/0 via-accent-green/50 to-accent-green/0 hidden lg:block"
+            initial={{ height: 0 }}
+            whileInView={{ height: "100%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          />
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="glass-strong rounded-2xl p-8 hover:bg-white/10 transition-all"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.15, duration: 0.6 }}
+              whileHover={{ 
+                scale: 1.01,
+                transition: { duration: 0.2 }
+              }}
+              className="glass-strong rounded-2xl p-8 hover:bg-white/10 transition-all relative lg:ml-6"
             >
+              {/* Timeline dot */}
+              <motion.div 
+                className="absolute left-[-27px] top-12 w-3 h-3 bg-accent-green rounded-full hidden lg:block"
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15 + 0.3, type: "spring", stiffness: 200 }}
+              />
               {/* Header */}
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-text-primary mb-2">

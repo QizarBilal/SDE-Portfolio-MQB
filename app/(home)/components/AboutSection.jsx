@@ -1,6 +1,6 @@
 "use client"
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useEffect, useRef, useState } from 'react'
+import { motion, useInView } from 'framer-motion'
 
 const AboutSection = () => {
   const stats = [
@@ -44,11 +44,19 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-all group"
+                whileHover={{ 
+                  y: -8,
+                  transition: { duration: 0.2 }
+                }}
+                className="glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-all group cursor-default hover:shadow-lg hover:shadow-green-500/20"
               >
-                <div className="text-3xl lg:text-4xl font-bold text-gradient-green mb-2 group-hover:scale-110 transition-transform">
+                <motion.div 
+                  className="text-3xl lg:text-4xl font-bold text-gradient-green mb-2"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
                   {stat.value}
-                </div>
+                </motion.div>
                 <div className="text-sm text-text-muted uppercase tracking-wider">
                   {stat.label}
                 </div>

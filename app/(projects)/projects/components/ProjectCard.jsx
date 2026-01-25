@@ -8,17 +8,27 @@ import { itemAnimation } from './Animations';
 export const ProjectCard = ({ project, index }) => (
     <motion.div
         variants={itemAnimation}
-        className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300"
+        whileHover={{ 
+            y: -4,
+            transition: { duration: 0.3 }
+        }}
+        className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300 hover:shadow-lg hover:shadow-primary/10"
     >
         <div className="sm:w-1/3">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <img
+                <motion.img
                     src={project.image}
                     alt={project.title}
                     loading="lazy"
-                    className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover w-full h-full"
+                    whileHover={{ scale: 1.08 }}
+                    transition={{ duration: 0.4 }}
                 />
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
+                <motion.div 
+                    className="absolute inset-0 bg-black/40"
+                    whileHover={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
+                    transition={{ duration: 0.3 }}
+                />
             </div>
         </div>
 

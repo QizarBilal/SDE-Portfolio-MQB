@@ -46,10 +46,10 @@ const textAnimation = {
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[calc(100vh-140px)] flex items-center justify-center relative">
+    <section className="min-h-[calc(100vh-140px)] flex items-center justify-center relative overflow-hidden">
       <BackgroundPresets.Minimal />
 
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 relative z-10">
         <motion.div
           variants={containerAnimation}
           initial="hidden"
@@ -95,14 +95,19 @@ Python & DSA Focused Developer | Full-Stack & AI Enthusiast              </motio
             className="flex flex-wrap gap-4 justify-center pt-6"
           >
             <Link href={"/projects"}>
-              <Button
-                variant="expandIcon"
-                Icon={HiArrowRight}
-                iconPlacement="right"
-                className="rounded-full px-6 py-6 text-base transition-all duration-300 hover:scale-105 font-semibold"
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                View Projects
-              </Button>
+                <Button
+                  variant="expandIcon"
+                  Icon={HiArrowRight}
+                  iconPlacement="right"
+                  className="rounded-full px-6 py-6 text-base transition-all duration-300 font-semibold shadow-lg hover:shadow-primary/50 hover:shadow-xl"
+                >
+                  View Projects
+                </Button>
+              </motion.div>
             </Link>
           </motion.div>
 

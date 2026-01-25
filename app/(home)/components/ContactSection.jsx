@@ -9,8 +9,8 @@ const ContactSection = () => {
     {
       icon: HiMail,
       label: 'Email',
-      value: 'mohammedqizarbilal@gmail.com',
-      link: 'mailto:mohammedqizarbilal@gmail.com'
+      value: 'bilalqizar@gmail.com',
+      link: 'mailto:bilalqizar@gmail.com'
     },
     {
       icon: FaLinkedin,
@@ -21,8 +21,8 @@ const ContactSection = () => {
     {
       icon: FaGithub,
       label: 'GitHub',
-      value: '@mohammedqizar',
-      link: 'https://github.com/mohammedqizar'
+      value: '@QizarBilal',
+      link: 'https://github.com/QizarBilal'
     },
     {
       icon: HiLocationMarker,
