@@ -133,13 +133,89 @@ const TerminalHero = () => {
               {/* Center glow */}
               <div className="relative w-64 h-64 rounded-full bg-gradient-to-br from-accent-green/20 via-cyan-500/10 to-transparent blur-3xl"></div>
 
-              {/* Placeholder for portrait - replace with actual image */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-72 h-72 rounded-2xl glass-strong flex items-center justify-center overflow-hidden">
-                  <img 
+              {/* Portrait with advanced animations */}
+              <motion.div 
+                className="absolute inset-0 flex items-center justify-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: 0.5,
+                  ease: [0.16, 1, 0.3, 1]
+                }}
+              >
+                <motion.div 
+                  className="w-72 h-72 rounded-2xl glass-strong flex items-center justify-center overflow-hidden relative group"
+                  animate={{ 
+                    y: [0, -8, 0],
+                  }}
+                  transition={{
+                    y: {
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    rotateY: 5,
+                    rotateX: -5,
+                    transition: { duration: 0.3 }
+                  }}
+                  style={{
+                    transformStyle: "preserve-3d",
+                    perspective: "1000px"
+                  }}
+                >
+                  {/* Animated border gradient */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                    style={{
+                      background: "linear-gradient(45deg, #10b981, #06b6d4, #10b981)",
+                      backgroundSize: "200% 200%",
+                      padding: "2px",
+                      WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                      WebkitMaskComposite: "xor",
+                      maskComposite: "exclude"
+                    }}
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"]
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                  />
+                  
+                  {/* Glow effect on hover */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-accent-green/0 via-accent-green/0 to-accent-green/0 opacity-0 group-hover:opacity-100"
+                    animate={{
+                      background: [
+                        "radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.2) 0%, transparent 50%)",
+                        "radial-gradient(circle at 100% 100%, rgba(6, 182, 212, 0.2) 0%, transparent 50%)",
+                        "radial-gradient(circle at 0% 0%, rgba(16, 185, 129, 0.2) 0%, transparent 50%)"
+                      ]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                  
+                  <motion.img 
                     src="/Portrait.png" 
                     alt="Portrait"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover relative z-10"
+                    initial={{ filter: "brightness(0.8) blur(10px)" }}
+                    animate={{ filter: "brightness(1) blur(0px)" }}
+                    transition={{ duration: 1, delay: 0.7 }}
+                    whileHover={{
+                      filter: "brightness(1.1) saturate(1.1)",
+                      transition: { duration: 0.3 }
+                    }}
                     onError={(e) => {
                       e.target.style.display = 'none'
                       e.target.nextSibling.style.display = 'flex'
@@ -153,8 +229,8 @@ const TerminalHero = () => {
                       Building the future,<br />one commit at a time
                     </div>
                   </div>
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </motion.div>
