@@ -6,6 +6,61 @@ import { HiCheckCircle } from 'react-icons/hi'
 const ExperienceSection = () => {
   const experiences = [
     {
+      role: 'Lead Product Engineer',
+      company: 'Webill India Pvt. Ltd.',
+      period: 'March 2026 - Present',
+      location: 'Vaniyambadi',
+      type: 'Full-time',
+      tech: ['React', 'Next.js', 'Node.js', 'JavaScript', 'MongoDB', 'REST APIs', 'System Design'],
+      achievements: [
+        {
+          problem: 'The company required scalable, production-grade software products and web applications to support business operations and digital presence',
+          action: 'Designed and developed end-to-end web applications and internal software systems, including the official company website and product platforms, focusing on modular architecture and scalability',
+          impact: 'Enabled a strong digital infrastructure, improving system reliability, scalability, and overall product delivery efficiency'
+        },
+        {
+          problem: 'Lack of a modern, high-performance official website to represent the company’s services and products effectively',
+          action: 'Engineered and optimized the official website with responsive design, clean UI/UX, and performance-focused architecture',
+          impact: 'Improved user engagement, reduced load times, and established a professional online presence for the company'
+        },
+        {
+          problem: 'Need for efficient development workflows and maintainable frontend architectures across multiple projects',
+          action: 'Implemented reusable component systems, structured project architecture, and best practices for frontend scalability',
+          impact: 'Reduced development time, improved code maintainability, and ensured consistency across all company products'
+        },
+        {
+          problem: 'Growing demand for robust backend systems to support application features and integrations',
+          action: 'Built and integrated RESTful APIs, handled data flow management, and ensured seamless frontend-backend communication',
+          impact: 'Enhanced application performance, reliability, and scalability across multiple software products'
+        }
+      ]
+    },
+    {
+      role: 'Artificial Intelligence Intern',
+      company: 'Infosys Springboard',
+      period: 'Feb 2026 - April 2026',
+      location: 'Remote',
+      type: 'Internship',
+      tech: ['Python', 'Machine Learning', 'NLP', 'Scikit-learn', 'Pandas', 'NumPy'],
+      achievements: [
+        {
+          problem: 'Job seekers struggle to align resumes with job descriptions, leading to poor ATS performance and missed opportunities',
+          action: 'Designed and developed "SkillMatch-AI", an NLP-based system for resume parsing, job description analysis, and skill gap identification',
+          impact: 'Improved resume-job alignment by providing actionable recommendations and increasing ATS compatibility'
+        },
+        {
+          problem: 'Limited understanding of real-world AI/ML implementation among students transitioning from theory to practice',
+          action: 'Completed structured learning in AI/ML fundamentals and intermediate concepts, including supervised learning, NLP pipelines, and data preprocessing',
+          impact: 'Built a strong foundation in applied AI, enabling development of production-oriented machine learning systems'
+        },
+        {
+          problem: 'Need for efficient data processing and model evaluation in AI workflows',
+          action: 'Worked with datasets using Pandas and NumPy, implemented ML models using Scikit-learn, and applied evaluation techniques for performance optimization',
+          impact: 'Achieved reliable model performance and improved understanding of end-to-end ML pipelines'
+        }
+      ]
+    },
+    {
       role: 'Frontend Developer',
       company: 'Zidio Development',
       period: 'Aug 2025 - Dec 2025',
@@ -69,26 +124,6 @@ const ExperienceSection = () => {
           impact: 'Reduced data preparation time from hours to minutes while improving model quality'
         }
       ]
-    },
-    {
-      role: 'Python Developer',
-      company: 'ShadowFox',
-      period: 'Jan 2025 - Feb 2025',
-      location: 'Remote',
-      type: 'Internship',
-      tech: ['Python', 'Django', 'APIs', 'Scripting'],
-      achievements: [
-        {
-          problem: 'Manual processes consuming significant development time',
-          action: 'Developed Python automation scripts and tools to streamline workflows',
-          impact: 'Automated 5+ repetitive tasks, saving 10+ hours per week'
-        },
-        {
-          problem: 'Need for robust backend APIs for client applications',
-          action: 'Built RESTful APIs with proper authentication and error handling',
-          impact: 'Delivered scalable APIs handling 1000+ requests/day with 99.9% uptime'
-        }
-      ]
     }
   ]
 
@@ -114,7 +149,7 @@ const ExperienceSection = () => {
         {/* Experience Cards */}
         <div className="space-y-8 relative">
           {/* Timeline line */}
-          <motion.div 
+          <motion.div
             className="absolute left-0 top-0 w-[2px] bg-gradient-to-b from-accent-green/0 via-accent-green/50 to-accent-green/0 hidden lg:block"
             initial={{ height: 0 }}
             whileInView={{ height: "100%" }}
@@ -128,14 +163,14 @@ const ExperienceSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.01,
                 transition: { duration: 0.2 }
               }}
               className="glass-strong rounded-2xl p-8 hover:bg-white/10 transition-all relative lg:ml-6"
             >
               {/* Timeline dot */}
-              <motion.div 
+              <motion.div
                 className="absolute left-[-27px] top-12 w-3 h-3 bg-accent-green rounded-full hidden lg:block"
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}

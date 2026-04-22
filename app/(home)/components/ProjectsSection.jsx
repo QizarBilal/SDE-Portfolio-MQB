@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       approach: 'Designed a multi-agent AI system simulating a full digital institution. Implemented modules for capability tracking, task execution, evaluation, and career intelligence. Built Capability Digital Twin modeling, skill genome mapping, and AI-driven roadmap generation with adaptive feedback loops.',
       outcome: 'Transforms learning into verifiable capability proofs. Enables continuous tracking of skill growth, execution reliability, and career readiness through AI-driven insights.',
       tech: ['React', 'Node.js', 'MongoDB', 'AI Agents', 'NLP', 'Dashboard Systems'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/Twinstitute-AI',
       image: '/projects/twinstitute.jpg',
       metrics: [
         { label: 'Core Modules', value: '8+' },
@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       approach: 'Built NLP-based system for resume parsing and job description matching. Implemented similarity scoring, keyword extraction, and skill gap detection. Designed recommendation engine to suggest improvements for better job alignment.',
       outcome: 'Provides actionable insights to improve resumes and increase ATS compatibility with real-time feedback.',
       tech: ['Python', 'NLP', 'Scikit-learn', 'React', 'Flask'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/SkillMatch-AI',
       image: '/projects/skillmatch.jpg',
       metrics: [
         { label: 'ATS Improvement', value: 'High' },
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
       approach: 'Developed a platform integrating environmental data tracking, carbon footprint estimation, and personalized eco-friendly recommendations using data visualization techniques.',
       outcome: 'Encourages sustainable actions through measurable insights and user engagement.',
       tech: ['React', 'Node.js', 'APIs', 'Data Visualization'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/GreenNode',
       image: '/projects/greennode.jpg',
       metrics: [
         { label: 'User Insights', value: 'Real-time' },
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
       approach: 'Built a community-driven platform with discussion threads, knowledge sharing modules, and user interaction features. Focused on scalable architecture and seamless UX.',
       outcome: 'Improves collaboration and enables structured technical engagement among users.',
       tech: ['React', 'Node.js', 'MongoDB'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/Tech-Huddle-Space',
       image: '/projects/techhuddle.jpg',
       metrics: [
         { label: 'Community Type', value: 'Tech-focused' },
@@ -90,7 +90,7 @@ const ProjectsSection = () => {
       approach: 'Developed a full-stack portal with modules for registration, project submission, judging workflows, and leaderboard tracking. Designed scalable backend APIs and dynamic UI.',
       outcome: 'Streamlined hackathon operations and improved participant and organizer experience.',
       tech: ['React', 'Node.js', 'Express', 'MongoDB'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/Zidio-Hackathon-Portal',
       image: '/projects/zidiohack.jpg',
       metrics: [
         { label: 'Automation', value: 'End-to-end' },
@@ -108,7 +108,7 @@ const ProjectsSection = () => {
       approach: 'Built a responsive and optimized website focusing on performance, UI/UX, and structured content delivery. Ensured fast load times and clean design.',
       outcome: 'Delivered a professional digital presence aligned with business needs and branding.',
       tech: ['HTML', 'CSS', 'JavaScript', 'React'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://webill.in',
       image: '/projects/webill.jpg',
       metrics: [
         { label: 'Performance', value: 'Optimized' },
@@ -126,7 +126,7 @@ const ProjectsSection = () => {
       approach: 'Designed a conceptual AI architecture focusing on knowledge aggregation, reasoning systems, and adaptive intelligence modeling.',
       outcome: 'Provides a foundation for future distributed AI intelligence systems.',
       tech: ['AI Models', 'Concept Architecture'],
-      github: 'https://github.com/QizarBilal',
+      github: 'https://github.com/QizarBilal/SeaBrain',
       image: '/projects/seabrain.jpg',
       metrics: [
         { label: 'Type', value: 'Research आधारित' },
@@ -150,24 +150,6 @@ const ProjectsSection = () => {
         { label: 'Validation Type', value: 'AI-based' },
         { label: 'Error Reduction', value: 'High' },
         { label: 'Processing', value: 'Real-time' }
-      ]
-    },
-    {
-      name: 'ZidioHacks',
-      category: 'Platform',
-      status: 'Production-ready',
-      description: 'AI-powered recruitment automation platform',
-      image: '/projects/zidiohacks.jpg',
-      problem: 'Recruiters spend excessive time manually screening resumes and predicting salary ranges, leading to inefficiencies and errors.',
-      approach: 'Built full-stack system combining NLP-based resume parsing and ML salary prediction with scalable REST APIs and modular architecture. :contentReference[oaicite:0]{index=0}',
-      outcome: 'Processes resumes in minutes with high accuracy and significantly reduces manual effort.',
-      tech: ['Python', 'Flask', 'React', 'TensorFlow', 'MySQL', 'NLP'],
-      github: 'https://github.com/QizarBilal',
-      image: '/projects/zidiohacks.jpg',
-      metrics: [
-        { label: 'Time Saved', value: '80%' },
-        { label: 'Accuracy', value: '85%' },
-        { label: 'Processing', value: '100+ resumes' }
       ]
     }
   ];
