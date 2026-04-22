@@ -9,116 +9,168 @@ const ProjectsSection = () => {
 
   const projects = [
     {
+      name: 'Twinstitute AI',
+      category: 'AI System',
+      status: 'Advanced',
+      description: 'AI-driven Digital Institution Twin for capability engineering',
+      image: '/projects/twinstitute.jpg',
+      problem: 'Students lack structured, personalized systems to convert learning into measurable, real-world capability. Traditional education fails to track skill growth, execution ability, and career readiness effectively.',
+      approach: 'Designed a multi-agent AI system simulating a full digital institution. Implemented modules for capability tracking, task execution, evaluation, and career intelligence. Built Capability Digital Twin modeling, skill genome mapping, and AI-driven roadmap generation with adaptive feedback loops.',
+      outcome: 'Transforms learning into verifiable capability proofs. Enables continuous tracking of skill growth, execution reliability, and career readiness through AI-driven insights.',
+      tech: ['React', 'Node.js', 'MongoDB', 'AI Agents', 'NLP', 'Dashboard Systems'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/twinstitute.jpg',
+      metrics: [
+        { label: 'Core Modules', value: '8+' },
+        { label: 'AI Agents', value: '5+' },
+        { label: 'Tracking Type', value: 'Real-time' }
+      ]
+    },
+    {
+      name: 'SkillMatch-AI',
+      category: 'ML',
+      status: 'Production-ready',
+      description: 'Resume matcher and skill recommendation system',
+      image: '/projects/skillmatch.jpg',
+      problem: 'Job seekers struggle to align resumes with job descriptions, resulting in low ATS success rates and missed opportunities.',
+      approach: 'Built NLP-based system for resume parsing and job description matching. Implemented similarity scoring, keyword extraction, and skill gap detection. Designed recommendation engine to suggest improvements for better job alignment.',
+      outcome: 'Provides actionable insights to improve resumes and increase ATS compatibility with real-time feedback.',
+      tech: ['Python', 'NLP', 'Scikit-learn', 'React', 'Flask'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/skillmatch.jpg',
+      metrics: [
+        { label: 'ATS Improvement', value: 'High' },
+        { label: 'Response Time', value: '<2s' },
+        { label: 'Matching Accuracy', value: '85%+' }
+      ]
+    },
+    {
+      name: 'GreenNode',
+      category: 'Platform',
+      status: 'Prototype',
+      description: 'Tech-driven sustainability and environmental tracking platform',
+      image: '/projects/greennode.jpg',
+      problem: 'Users lack accessible tools to track environmental impact and take actionable sustainability measures.',
+      approach: 'Developed a platform integrating environmental data tracking, carbon footprint estimation, and personalized eco-friendly recommendations using data visualization techniques.',
+      outcome: 'Encourages sustainable actions through measurable insights and user engagement.',
+      tech: ['React', 'Node.js', 'APIs', 'Data Visualization'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/greennode.jpg',
+      metrics: [
+        { label: 'User Insights', value: 'Real-time' },
+        { label: 'Tracking Type', value: 'Carbon Footprint' },
+        { label: 'Engagement', value: 'High' }
+      ]
+    },
+    {
+      name: 'Tech Huddle Space',
+      category: 'Platform',
+      status: 'Functional',
+      description: 'Collaborative platform for technical discussions and community learning',
+      image: '/projects/techhuddle.jpg',
+      problem: 'Students lack a structured platform for peer-to-peer learning, collaboration, and technical discussions.',
+      approach: 'Built a community-driven platform with discussion threads, knowledge sharing modules, and user interaction features. Focused on scalable architecture and seamless UX.',
+      outcome: 'Improves collaboration and enables structured technical engagement among users.',
+      tech: ['React', 'Node.js', 'MongoDB'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/techhuddle.jpg',
+      metrics: [
+        { label: 'Community Type', value: 'Tech-focused' },
+        { label: 'Interaction', value: 'Real-time' },
+        { label: 'Scalability', value: 'High' }
+      ]
+    },
+    {
+      name: 'Zidio Hackathon Portal',
+      category: 'Platform',
+      status: 'Production-ready',
+      description: 'Full-stack hackathon management and evaluation system',
+      image: '/projects/zidiohack.jpg',
+      problem: 'Hackathons lack structured systems for participant management, project submission, and evaluation workflows.',
+      approach: 'Developed a full-stack portal with modules for registration, project submission, judging workflows, and leaderboard tracking. Designed scalable backend APIs and dynamic UI.',
+      outcome: 'Streamlined hackathon operations and improved participant and organizer experience.',
+      tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/zidiohack.jpg',
+      metrics: [
+        { label: 'Automation', value: 'End-to-end' },
+        { label: 'Participants', value: 'Scalable' },
+        { label: 'Evaluation', value: 'Automated' }
+      ]
+    },
+    {
+      name: 'Webill Official Website',
+      category: 'System',
+      status: 'Production-ready',
+      description: 'Corporate website for Webill India Pvt. Ltd.',
+      image: '/projects/webill.jpg',
+      problem: 'Company required a modern, scalable, and high-performance web presence to represent its products and services.',
+      approach: 'Built a responsive and optimized website focusing on performance, UI/UX, and structured content delivery. Ensured fast load times and clean design.',
+      outcome: 'Delivered a professional digital presence aligned with business needs and branding.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'React'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/webill.jpg',
+      metrics: [
+        { label: 'Performance', value: 'Optimized' },
+        { label: 'UX', value: 'High' },
+        { label: 'Load Time', value: '<2s' }
+      ]
+    },
+    {
+      name: 'Seabrain',
+      category: 'AI',
+      status: 'Concept',
+      description: 'AI-based distributed intelligence and knowledge system',
+      image: '/projects/seabrain.jpg',
+      problem: 'Lack of systems that simulate collective intelligence and adaptive learning across distributed data sources.',
+      approach: 'Designed a conceptual AI architecture focusing on knowledge aggregation, reasoning systems, and adaptive intelligence modeling.',
+      outcome: 'Provides a foundation for future distributed AI intelligence systems.',
+      tech: ['AI Models', 'Concept Architecture'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/seabrain.jpg',
+      metrics: [
+        { label: 'Type', value: 'Research आधारित' },
+        { label: 'Architecture', value: 'Distributed' },
+        { label: 'Scalability', value: 'High' }
+      ]
+    },
+    {
+      name: 'MediVerse Guardian X',
+      category: 'AI Healthcare',
+      status: 'Advanced',
+      description: 'AI-powered prescription verification system',
+      image: '/projects/mediverse.jpg',
+      problem: 'Prescription errors and lack of intelligent validation systems can lead to serious healthcare risks.',
+      approach: 'Built AI system leveraging NLP models with IBM Watson and Hugging Face for prescription validation, drug interaction detection, and anomaly identification.',
+      outcome: 'Improves healthcare safety by verifying prescriptions with AI-driven insights.',
+      tech: ['AI', 'NLP', 'IBM Watson', 'Hugging Face', 'React', 'Node.js'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/mediverse.jpg',
+      metrics: [
+        { label: 'Validation Type', value: 'AI-based' },
+        { label: 'Error Reduction', value: 'High' },
+        { label: 'Processing', value: 'Real-time' }
+      ]
+    },
+    {
       name: 'ZidioHacks',
       category: 'Platform',
       status: 'Production-ready',
       description: 'AI-powered recruitment automation platform',
       image: '/projects/zidiohacks.jpg',
-      problem: 'Recruiters spend 10+ hours weekly manually screening resumes, parsing inconsistent formats, and predicting appropriate salary ranges for candidates. This manual process is error-prone and doesn\'t scale.',
-      approach: 'Built a full-stack platform combining NLP for resume parsing, ML models for salary prediction, and React frontend. Implemented REST API architecture with Flask backend, MySQL database for candidate data, and TensorFlow for ML inference. Focused on modularity, allowing independent scaling of parsing and prediction services.',
-      outcome: 'Reduced screening time by 80%. System processes 100+ resumes in minutes with 85% salary prediction accuracy. Deployed on Vercel with zero downtime. Architecture supports 10x traffic scaling.',
-      tech: ['Python', 'Flask', 'React', 'TensorFlow', 'MySQL', 'NLP', 'Scikit-learn'],
-      github: 'https://github.com/username/zidiohacks',
-      live: 'https://zidiohacks.vercel.app',
+      problem: 'Recruiters spend excessive time manually screening resumes and predicting salary ranges, leading to inefficiencies and errors.',
+      approach: 'Built full-stack system combining NLP-based resume parsing and ML salary prediction with scalable REST APIs and modular architecture. :contentReference[oaicite:0]{index=0}',
+      outcome: 'Processes resumes in minutes with high accuracy and significantly reduces manual effort.',
+      tech: ['Python', 'Flask', 'React', 'TensorFlow', 'MySQL', 'NLP'],
+      github: 'https://github.com/QizarBilal',
+      image: '/projects/zidiohacks.jpg',
       metrics: [
         { label: 'Time Saved', value: '80%' },
-        { label: 'ML Accuracy', value: '85%' },
-        { label: 'Resumes/Min', value: '100+' }
-      ]
-    },
-    {
-      name: 'ResuMagic',
-      category: 'System',
-      status: 'Production-ready',
-      description: 'Intelligent resume builder with ATS optimization',
-      image: '/projects/resumagic.jpg',
-      problem: 'Job seekers create resumes that fail ATS (Applicant Tracking Systems) screening due to poor formatting, missing keywords, or unclear structure. Manual optimization is time-consuming and unreliable.',
-      approach: 'Developed a web application with Next.js frontend and Python backend. Integrated PDF generation with react-pdf, implemented keyword extraction using NLP, and built ATS scoring algorithm analyzing format, keywords, and structure. Added real-time preview and multi-template support.',
-      outcome: 'Users create ATS-optimized resumes in under 10 minutes. 92% of generated resumes pass ATS screening. Supports 5+ professional templates. Processing latency under 2 seconds.',
-      tech: ['Next.js', 'Python', 'React-PDF', 'NLP', 'Tailwind CSS', 'MongoDB'],
-      github: 'https://github.com/username/resumagic',
-      live: 'https://resumagic.vercel.app',
-      metrics: [
-        { label: 'ATS Pass Rate', value: '92%' },
-        { label: 'Avg. Build Time', value: '<10 min' },
-        { label: 'Templates', value: '5+' }
-      ]
-    },
-    {
-      name: 'AI Resume Parser',
-      category: 'ML',
-      status: 'Production-ready',
-      description: 'Production ML system for resume data extraction',
-      image: '/projects/ai-parser.jpg',
-      problem: 'Extracting structured data from unstructured resume PDFs is challenging. Different formats, layouts, and styles make traditional parsing unreliable. Manual extraction doesn\'t scale.',
-      approach: 'Built Python-based parsing engine using spaCy for NER (Named Entity Recognition), regex for pattern matching, and custom ML model trained on 1000+ resumes. Implemented fallback mechanisms, confidence scoring, and validation layer. Containerized with Docker for consistent deployment.',
-      outcome: 'Extracts name, email, phone, skills, experience with 94% accuracy. Handles PDF, DOCX, TXT formats. Processes single resume in <3 seconds. API deployed with 99.5% uptime.',
-      tech: ['Python', 'spaCy', 'scikit-learn', 'Flask', 'Docker', 'PostgreSQL'],
-      github: 'https://github.com/username/ai-resume-parser',
-      image: '/projects/ai-parser.jpg',
-      metrics: [
-        { label: 'Extraction Accuracy', value: '94%' },
-        { label: 'Processing Time', value: '<3s' },
-        { label: 'Uptime', value: '99.5%' }
-      ]
-    },
-    {
-      name: 'Salary Prediction ML',
-      category: 'ML',
-      status: 'Production-ready',
-      description: 'Machine learning model for IT salary forecasting',
-      image: '/projects/salary-ml.jpg',
-      problem: 'Job seekers and employers lack reliable salary data for IT roles. Existing tools provide generic ranges without considering skills, experience, location, and company size nuances.',
-      approach: 'Trained ensemble model (Random Forest + XGBoost) on 10K+ salary records. Implemented feature engineering for skills encoding, experience binning, and location normalization. Used cross-validation for hyperparameter tuning. Built Flask API with request validation and caching.',
-      outcome: 'Predicts salaries within ±15% error margin for 85% of cases. Model retrained monthly with fresh data. API handles 1000+ requests/day. Clear feature importance insights for users.',
-      tech: ['Python', 'XGBoost', 'Pandas', 'Flask', 'NumPy', 'Matplotlib'],
-      github: 'https://github.com/username/salary-prediction',
-      image: '/projects/salary-ml.jpg',
-      metrics: [
         { label: 'Accuracy', value: '85%' },
-        { label: 'Error Margin', value: '±15%' },
-        { label: 'Daily Requests', value: '1000+' }
-      ]
-    },
-    {
-      name: 'FreeFireXperTrade',
-      category: 'Platform',
-      status: 'Production-ready',
-      description: 'Gaming marketplace with real-time transactions',
-      image: '/projects/ffxpertrade.jpg',
-      problem: 'Gamers need a trusted platform for trading in-game assets. Existing solutions lack transparency, have high fees, and poor user experience. Security is a major concern.',
-      approach: 'Built MERN stack marketplace with real-time WebSocket connections for live trading. Implemented JWT authentication, encrypted transactions, admin dashboard for moderation, and automated fraud detection. Used Redis for caching and session management.',
-      outcome: 'Handles 500+ daily transactions with <1% dispute rate. Real-time updates with <100ms latency. 4.8/5 user rating. Zero security breaches in 6 months of operation.',
-      tech: ['MongoDB', 'Express', 'React', 'Node.js', 'WebSocket', 'Redis', 'JWT'],
-      github: 'https://github.com/username/freefirexpertrade',
-      live: 'https://ffxpertrade.com',
-      image: '/projects/ffxpertrade.jpg',
-      metrics: [
-        { label: 'Daily Transactions', value: '500+' },
-        { label: 'Latency', value: '<100ms' },
-        { label: 'User Rating', value: '4.8/5' }
-      ]
-    },
-    {
-      name: 'Portfolio V1',
-      category: 'System',
-      status: 'Production-ready',
-      description: 'First-generation portfolio with advanced animations',
-      image: '/projects/portfolio-v1.jpg',
-      problem: 'Needed a professional online presence showcasing projects and skills. Generic templates don\'t convey engineering capability. Performance and UX critical for first impressions.',
-      approach: 'Built with Next.js for SSR and optimal performance. Implemented Framer Motion for smooth animations, Intersection Observer for lazy loading, and optimized image delivery. Focused on sub-2s load times and Lighthouse 95+ scores.',
-      outcome: 'Achieves 98 Lighthouse performance score. Load time under 1.5s on 3G. 60fps animations. Featured in dev community showcases. Generated interview opportunities.',
-      tech: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'Vercel', 'TypeScript'],
-      github: 'https://github.com/username/portfolio-v1',
-      live: 'https://portfoliov1.vercel.app',
-      image: '/projects/portfolio-v1.jpg',
-      metrics: [
-        { label: 'Lighthouse Score', value: '98' },
-        { label: 'Load Time', value: '<1.5s' },
-        { label: 'FPS', value: '60' }
+        { label: 'Processing', value: '100+ resumes' }
       ]
     }
-  ]
+  ];
 
   return (
     <section id="projects" className="min-h-screen flex items-center justify-center px-6 lg:px-12 py-20">

@@ -7,7 +7,7 @@ const AboutSection = () => {
     { label: 'CGPA', value: '8.8+' },
     { label: 'Real Projects', value: '6+' },
     { label: 'Internships', value: '4+' },
-    { label: 'Years Engineering', value: '2+' },
+    { label: 'Years Engineering', value: '4+' },
   ]
 
   return (
@@ -44,13 +44,13 @@ const AboutSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                whileHover={{ 
+                whileHover={{
                   y: -8,
                   transition: { duration: 0.2 }
                 }}
                 className="glass-strong rounded-xl p-6 text-center hover:bg-white/10 transition-all group cursor-default hover:shadow-lg hover:shadow-green-500/20"
               >
-                <motion.div 
+                <motion.div
                   className="text-3xl lg:text-4xl font-bold text-gradient-green mb-2"
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
