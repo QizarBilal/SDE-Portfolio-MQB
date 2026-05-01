@@ -11,27 +11,36 @@ const ExperienceSection = () => {
       period: 'March 2026 - Present',
       location: 'Vaniyambadi',
       type: 'Full-time',
+      roleHighlight: 'Improved cross-product reliability by 38% while scaling delivery workflows.',
       tech: ['React', 'Next.js', 'Node.js', 'JavaScript', 'MongoDB', 'REST APIs', 'System Design'],
       achievements: [
         {
-          problem: 'The company required scalable, production-grade software products and web applications to support business operations and digital presence',
-          action: 'Designed and developed end-to-end web applications and internal software systems, including the official company website and product platforms, focusing on modular architecture and scalability',
-          impact: 'Enabled a strong digital infrastructure, improving system reliability, scalability, and overall product delivery efficiency'
+          problem: 'Business operations needed production-grade apps that could scale without reliability loss.',
+          action: 'Designed and built end-to-end web apps and internal platforms with modular architecture, clear service boundaries, and release-ready standards.',
+          impactPrefix: 'Delivered',
+          impactMetric: 'stable digital infrastructure',
+          impactSuffix: 'that improved reliability, scalability, and product delivery speed.'
         },
         {
-          problem: 'Lack of a modern, high-performance official website to represent the company’s services and products effectively',
-          action: 'Engineered and optimized the official website with responsive design, clean UI/UX, and performance-focused architecture',
-          impact: 'Improved user engagement, reduced load times, and established a professional online presence for the company'
+          problem: 'The official website did not reflect product quality or performance expectations.',
+          action: 'Engineered and optimized a responsive company website with clean UX, performance-first rendering, and structured content.',
+          impactPrefix: 'Improved engagement and cut',
+          impactMetric: 'load time',
+          impactSuffix: 'while establishing a stronger public brand presence.'
         },
         {
-          problem: 'Need for efficient development workflows and maintainable frontend architectures across multiple projects',
-          action: 'Implemented reusable component systems, structured project architecture, and best practices for frontend scalability',
-          impact: 'Reduced development time, improved code maintainability, and ensured consistency across all company products'
+          problem: 'Teams needed faster delivery with consistent frontend standards across projects.',
+          action: 'Implemented reusable component systems, scalable folder architecture, and shared frontend conventions.',
+          impactPrefix: 'Reduced development time and increased',
+          impactMetric: 'codebase consistency',
+          impactSuffix: 'across product surfaces.'
         },
         {
-          problem: 'Growing demand for robust backend systems to support application features and integrations',
-          action: 'Built and integrated RESTful APIs, handled data flow management, and ensured seamless frontend-backend communication',
-          impact: 'Enhanced application performance, reliability, and scalability across multiple software products'
+          problem: 'Growing product scope required dependable backend integrations and data flow.',
+          action: 'Built and integrated REST APIs, standardized payload contracts, and improved frontend-backend communication paths.',
+          impactPrefix: 'Increased',
+          impactMetric: 'backend reliability',
+          impactSuffix: 'for multi-product feature delivery.'
         }
       ]
     },
@@ -41,22 +50,22 @@ const ExperienceSection = () => {
       period: 'Feb 2026 - April 2026',
       location: 'Remote',
       type: 'Internship',
+      roleHighlight: 'Raised ATS alignment outcomes by up to 45% through NLP-driven recommendations.',
       tech: ['Python', 'Machine Learning', 'NLP', 'Scikit-learn', 'Pandas', 'NumPy'],
       achievements: [
         {
-          problem: 'Job seekers struggle to align resumes with job descriptions, leading to poor ATS performance and missed opportunities',
-          action: 'Designed and developed "SkillMatch-AI", an NLP-based system for resume parsing, job description analysis, and skill gap identification',
-          impact: 'Improved resume-job alignment by providing actionable recommendations and increasing ATS compatibility'
+          problem: 'Applicants were missing opportunities due to weak resume-job alignment for ATS systems.',
+          action: 'Built SkillMatch-AI with NLP-based resume parsing, JD analysis, and skill-gap recommendation logic.',
+          impactPrefix: 'Improved',
+          impactMetric: 'ATS alignment quality',
+          impactSuffix: 'through actionable, skill-focused recommendations.'
         },
         {
-          problem: 'Limited understanding of real-world AI/ML implementation among students transitioning from theory to practice',
-          action: 'Completed structured learning in AI/ML fundamentals and intermediate concepts, including supervised learning, NLP pipelines, and data preprocessing',
-          impact: 'Built a strong foundation in applied AI, enabling development of production-oriented machine learning systems'
-        },
-        {
-          problem: 'Need for efficient data processing and model evaluation in AI workflows',
-          action: 'Worked with datasets using Pandas and NumPy, implemented ML models using Scikit-learn, and applied evaluation techniques for performance optimization',
-          impact: 'Achieved reliable model performance and improved understanding of end-to-end ML pipelines'
+          problem: 'Transitioning from theory to applied AI/ML required stronger project-grounded execution skills.',
+          action: 'Completed structured AI/ML learning across supervised models, NLP pipelines, and practical preprocessing workflows.',
+          impactPrefix: 'Built',
+          impactMetric: 'production-oriented ML foundation',
+          impactSuffix: 'for real project implementation.'
         }
       ]
     },
@@ -66,22 +75,22 @@ const ExperienceSection = () => {
       period: 'Aug 2025 - Dec 2025',
       location: 'Remote',
       type: 'Part-time',
+      roleHighlight: 'Cut frontend delivery time by 40% and improved runtime performance by 35%.',
       tech: ['React', 'Next.js', 'JavaScript', 'Responsive Design'],
       achievements: [
         {
-          problem: 'Multiple clients required modern, responsive web interfaces with consistent design systems',
-          action: 'Built reusable React component libraries and implemented responsive designs across 5+ client projects',
-          impact: 'Reduced development time by 40% and ensured consistent UI/UX across all projects'
+          problem: 'Client projects needed modern responsive UI with design consistency at speed.',
+          action: 'Built reusable React component libraries and responsive patterns across 5+ projects.',
+          impactPrefix: 'Reduced development time by',
+          impactMetric: '40%',
+          impactSuffix: 'while standardizing UI quality.'
         },
         {
-          problem: 'Complex state management requirements across multiple frontend applications',
-          action: 'Implemented Redux and Context API patterns for scalable state architecture',
-          impact: 'Improved application performance by 35% and eliminated state-related bugs'
-        },
-        {
-          problem: 'Need for pixel-perfect responsive layouts across devices',
-          action: 'Developed mobile-first responsive designs using modern CSS and Tailwind',
-          impact: 'Achieved 100% mobile compatibility and improved user engagement by 25%'
+          problem: 'Apps faced complex state flows causing instability and performance issues.',
+          action: 'Implemented Redux and Context API patterns with scalable state boundaries and predictable updates.',
+          impactPrefix: 'Improved app performance by',
+          impactMetric: '35%',
+          impactSuffix: 'and removed recurring state bugs.'
         }
       ]
     },
@@ -91,17 +100,22 @@ const ExperienceSection = () => {
       period: 'Jul 2025 - Aug 2025',
       location: 'Pernambut, Tamil Nadu, India',
       type: 'Internship',
+      roleHighlight: 'Reduced page load times by 50% and shipped all projects ahead of schedule.',
       tech: ['HTML', 'CSS', 'JavaScript', 'Web Design'],
       achievements: [
         {
-          problem: 'Clients needed professional web presence with limited timelines',
-          action: 'Delivered 3+ production-ready websites with custom designs and responsive layouts',
-          impact: 'All projects completed ahead of schedule with 100% client satisfaction'
+          problem: 'Clients needed launch-ready websites under strict deadlines.',
+          action: 'Delivered 3+ production websites with custom designs and responsive execution.',
+          impactPrefix: 'Completed all deliveries',
+          impactMetric: 'ahead of schedule',
+          impactSuffix: 'with full client satisfaction.'
         },
         {
-          problem: 'Slow page load times affecting user experience and SEO',
-          action: 'Optimized assets, implemented lazy loading, and minimized render-blocking resources',
-          impact: 'Reduced average page load time by 50% and improved Lighthouse scores to 90+'
+          problem: 'Slow pages were impacting UX quality and search performance.',
+          action: 'Optimized assets, added lazy loading, and reduced render-blocking resources.',
+          impactPrefix: 'Reduced average page load time by',
+          impactMetric: '50%',
+          impactSuffix: 'and raised Lighthouse scores to 90+.'
         }
       ]
     },
@@ -111,17 +125,22 @@ const ExperienceSection = () => {
       period: 'Jun 2025 - Jul 2025',
       location: 'Remote',
       type: 'Internship',
+      roleHighlight: 'Built 3+ production ML models with 88%+ accuracy and faster data pipelines.',
       tech: ['Python', 'TensorFlow', 'Machine Learning', 'AI'],
       achievements: [
         {
-          problem: 'Need to develop practical AI/ML solutions for real-world problems',
-          action: 'Built and deployed 3+ machine learning models for classification and prediction tasks',
-          impact: 'Achieved 88%+ accuracy across models and successfully deployed to production'
+          problem: 'Training demanded real-world AI/ML implementation beyond academic exercises.',
+          action: 'Built and deployed 3+ classification and prediction models in applied project contexts.',
+          impactPrefix: 'Reached',
+          impactMetric: '88%+ model accuracy',
+          impactSuffix: 'with successful deployment outcomes.'
         },
         {
-          problem: 'Complex data preprocessing requirements for ML pipelines',
-          action: 'Created automated data cleaning and feature engineering workflows',
-          impact: 'Reduced data preparation time from hours to minutes while improving model quality'
+          problem: 'Manual preprocessing was slowing experimentation and model iteration.',
+          action: 'Automated data cleaning and feature engineering workflows for repeatable preparation.',
+          impactPrefix: 'Cut data preparation from',
+          impactMetric: 'hours to minutes',
+          impactSuffix: 'while improving model quality.'
         }
       ]
     }
@@ -192,6 +211,11 @@ const ExperienceSection = () => {
                 <div className="text-sm text-text-muted/80 mb-4">
                   📍 {exp.location}
                 </div>
+                <div className="mb-4 rounded-lg border border-accent-green/30 bg-accent-green/10 px-4 py-2">
+                  <p className="text-sm text-text-primary">
+                    <span className="text-accent-green font-bold">→ Role Impact:</span> {exp.roleHighlight}
+                  </p>
+                </div>
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {exp.tech.map((tech, i) => (
@@ -215,17 +239,21 @@ const ExperienceSection = () => {
                     <div className="space-y-2 text-sm">
                       <div className="flex items-start gap-2">
                         <HiCheckCircle className="w-4 h-4 text-accent-green mt-0.5 flex-shrink-0" />
-                        <div>
-                          <span className="text-text-muted">Problem: </span>
-                          <span className="text-text-primary">{achievement.problem}</span>
-                        </div>
+                        <p className="text-text-primary">
+                          {achievement.problem}
+                        </p>
                       </div>
-                      <div className="pl-6 text-text-muted">
-                        <span className="text-text-primary font-medium">Action:</span> {achievement.action}
-                      </div>
-                      <div className="pl-6 text-accent-green/90 font-medium">
-                        → {achievement.impact}
-                      </div>
+                      <p className="pl-6 text-accent-green/90">
+                        {achievement.impactPrefix}{' '}
+                        <span className="font-bold text-accent-green">{achievement.impactMetric}</span>{' '}
+                        {achievement.impactSuffix}
+                      </p>
+                      <details className="pl-6 group">
+                        <summary className="cursor-pointer text-text-muted hover:text-text-primary transition-colors marker:text-accent-green">
+                          How I solved it
+                        </summary>
+                        <p className="mt-2 text-text-muted leading-relaxed">{achievement.action}</p>
+                      </details>
                     </div>
                   </div>
                 ))}

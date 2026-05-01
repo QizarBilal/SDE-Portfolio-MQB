@@ -10,6 +10,12 @@ const AboutSection = () => {
     { label: 'Years Engineering', value: '4+' },
   ]
 
+  const engineeringFocus = [
+    'Scalable backend systems',
+    'AI-integrated applications',
+    'Performance-driven frontend architecture'
+  ]
+
   return (
     <section id="about" className="min-h-screen flex items-center justify-center px-6 lg:px-12 py-20">
       <div className="max-w-5xl w-full">
@@ -21,8 +27,8 @@ const AboutSection = () => {
         >
           {/* Title */}
           <h2 className="text-4xl lg:text-5xl font-bold text-text-primary mb-8">
-            I build systems,{' '}
-            <span className="text-gradient-green">not just software.</span>
+            Engineering production-grade systems{' '}
+            <span className="text-gradient-green">across frontend, backend, and AI.</span>
           </h2>
 
           {/* Body */}
@@ -34,6 +40,27 @@ const AboutSection = () => {
               I prioritize <span className="text-text-primary font-medium">clean code</span>, <span className="text-text-primary font-medium">predictable behavior</span>, <span className="text-text-primary font-medium">performance trade-offs</span>, and <span className="text-text-primary font-medium">long-term maintainability</span> — the fundamentals that define strong SDEs.
             </p>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="glass-strong rounded-xl p-6 mb-10"
+          >
+            <h3 className="text-lg font-bold text-text-primary mb-4">Engineering Focus</h3>
+            <div className="grid sm:grid-cols-3 gap-3">
+              {engineeringFocus.map((focus, index) => (
+                <div
+                  key={index}
+                  className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-text-muted"
+                >
+                  <span className="text-accent-green font-semibold mr-2">•</span>
+                  <span className="text-text-primary">{focus}</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
 
           {/* Stats Row */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">

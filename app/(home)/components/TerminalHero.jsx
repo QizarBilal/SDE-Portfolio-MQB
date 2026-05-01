@@ -8,7 +8,7 @@ const TerminalHero = () => {
   
   const commands = [
     { command: 'whoami', output: 'Mohammed Qizar Bilal' },
-    { command: 'focus', output: 'Python • DSA • Scalable Systems' },
+    { command: 'focus', output: 'Scalable Systems • Frontend • Backend • AI' },
     { command: 'status', output: 'Available for SDE Opportunities' },
   ]
 
@@ -76,6 +76,20 @@ const TerminalHero = () => {
               )}
             </div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35, duration: 0.5 }}
+            className="mt-6"
+          >
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-text-primary leading-tight">
+              I design and ship <span className="text-gradient-green">scalable systems</span> from APIs to AI-driven platforms.
+            </h1>
+            <p className="text-text-muted mt-3 max-w-2xl">
+              I turn ambiguous product requirements into reliable APIs, measurable data flows, and high-performance user experiences.
+            </p>
+          </motion.div>
 
           {/* CTA Buttons */}
           <motion.div
