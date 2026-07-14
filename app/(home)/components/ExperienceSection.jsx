@@ -6,6 +6,45 @@ import { HiCheckCircle } from 'react-icons/hi'
 const ExperienceSection = () => {
   const experiences = [
     {
+      role: 'Junior Software Engineer',
+      company: 'BluePMS Software Solutions',
+      period: 'Jun 2026 - Present',
+      location: 'Chennai, Tamil Nadu, India',
+      type: 'Full-time',
+      roleHighlight: 'Supporting BLUEPMS platform delivery through development, testing, deployment support, and production issue resolution.',
+      tech: ['DevOps', 'Software Development', 'Application Deployment', 'Debugging', 'Version Control', 'Software Testing'],
+      achievements: [
+        {
+          problem: 'The BLUEPMS hospitality platform requires stable, continuous improvements across features and reliability.',
+          action: 'Assist with development, testing, and maintenance tasks in the day-to-day product delivery workflow.',
+          impactPrefix: 'Strengthened',
+          impactMetric: 'platform stability',
+          impactSuffix: 'through consistent engineering support across releases.'
+        },
+        {
+          problem: 'Frequent deployment activities and production support need close collaboration with engineering teams.',
+          action: 'Work with the team on application deployments and resolve operational technical issues.',
+          impactPrefix: 'Improved',
+          impactMetric: 'deployment flow reliability',
+          impactSuffix: 'by supporting smoother release and support cycles.'
+        },
+        {
+          problem: 'Application performance and quality depend on early issue detection and quick debugging.',
+          action: 'Contribute to software testing, debugging, and validation to keep runtime behavior stable.',
+          impactPrefix: 'Enhanced',
+          impactMetric: 'application performance confidence',
+          impactSuffix: 'through continuous testing and issue triaging.'
+        },
+        {
+          problem: 'Modern product teams require practical DevOps and collaborative delivery practices.',
+          action: 'Apply DevOps concepts, version control discipline, and deployment workflows in team execution.',
+          impactPrefix: 'Expanded',
+          impactMetric: 'delivery readiness',
+          impactSuffix: 'by building hands-on capability in collaborative engineering workflows.'
+        }
+      ]
+    },
+    {
       role: 'Lead Product Engineer',
       company: 'Webill India Pvt. Ltd.',
       period: 'March 2026 - Present',
