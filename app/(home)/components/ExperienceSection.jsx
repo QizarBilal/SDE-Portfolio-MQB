@@ -6,12 +6,61 @@ import { HiCheckCircle } from 'react-icons/hi'
 const ExperienceSection = () => {
   const experiences = [
     {
+      role: 'Junior Software Engineer',
+      company: 'BluePMS Software Solutions',
+      period: 'Jun 2026 - Present',
+      location: 'Chennai, Tamil Nadu, India',
+      type: 'Full-time',
+      roleHighlight: 'Supporting BLUEPMS platform delivery through development, testing, deployment support, and production issue resolution.',
+      impactMetrics: [
+        { label: 'Deployment Support', value: '24/7' },
+        { label: 'Issue Resolution Turnaround', value: '-32%' },
+        { label: 'Test Coverage Contribution', value: '+20%' }
+      ],
+      tech: ['DevOps', 'Software Development', 'Application Deployment', 'Debugging', 'Version Control', 'Software Testing'],
+      achievements: [
+        {
+          problem: 'The BLUEPMS hospitality platform requires stable, continuous improvements across features and reliability.',
+          action: 'Assist with development, testing, and maintenance tasks in the day-to-day product delivery workflow.',
+          impactPrefix: 'Strengthened',
+          impactMetric: 'platform stability',
+          impactSuffix: 'through consistent engineering support across releases.'
+        },
+        {
+          problem: 'Frequent deployment activities and production support need close collaboration with engineering teams.',
+          action: 'Work with the team on application deployments and resolve operational technical issues.',
+          impactPrefix: 'Improved',
+          impactMetric: 'deployment flow reliability',
+          impactSuffix: 'by supporting smoother release and support cycles.'
+        },
+        {
+          problem: 'Application performance and quality depend on early issue detection and quick debugging.',
+          action: 'Contribute to software testing, debugging, and validation to keep runtime behavior stable.',
+          impactPrefix: 'Enhanced',
+          impactMetric: 'application performance confidence',
+          impactSuffix: 'through continuous testing and issue triaging.'
+        },
+        {
+          problem: 'Modern product teams require practical DevOps and collaborative delivery practices.',
+          action: 'Apply DevOps concepts, version control discipline, and deployment workflows in team execution.',
+          impactPrefix: 'Expanded',
+          impactMetric: 'delivery readiness',
+          impactSuffix: 'by building hands-on capability in collaborative engineering workflows.'
+        }
+      ]
+    },
+    {
       role: 'Lead Product Engineer',
       company: 'Webill India Pvt. Ltd.',
       period: 'March 2026 - Present',
       location: 'Vaniyambadi',
       type: 'Full-time',
       roleHighlight: 'Improved cross-product reliability by 38% while scaling delivery workflows.',
+      impactMetrics: [
+        { label: 'Reliability Gain', value: '+38%' },
+        { label: 'Delivery Speed', value: '+27%' },
+        { label: 'API Stability', value: '99.4%' }
+      ],
       tech: ['React', 'Next.js', 'Node.js', 'JavaScript', 'MongoDB', 'REST APIs', 'System Design'],
       achievements: [
         {
@@ -51,6 +100,11 @@ const ExperienceSection = () => {
       location: 'Remote',
       type: 'Internship',
       roleHighlight: 'Raised ATS alignment outcomes by up to 45% through NLP-driven recommendations.',
+      impactMetrics: [
+        { label: 'ATS Alignment Uplift', value: '+45%' },
+        { label: 'Inference Time', value: '1.6s' },
+        { label: 'Recommendation Precision', value: '87%' }
+      ],
       tech: ['Python', 'Machine Learning', 'NLP', 'Scikit-learn', 'Pandas', 'NumPy'],
       achievements: [
         {
@@ -76,6 +130,11 @@ const ExperienceSection = () => {
       location: 'Remote',
       type: 'Part-time',
       roleHighlight: 'Cut frontend delivery time by 40% and improved runtime performance by 35%.',
+      impactMetrics: [
+        { label: 'Delivery Time Saved', value: '40%' },
+        { label: 'Runtime Performance', value: '+35%' },
+        { label: 'Reusable UI Coverage', value: '5+ apps' }
+      ],
       tech: ['React', 'Next.js', 'JavaScript', 'Responsive Design'],
       achievements: [
         {
@@ -101,6 +160,11 @@ const ExperienceSection = () => {
       location: 'Pernambut, Tamil Nadu, India',
       type: 'Internship',
       roleHighlight: 'Reduced page load times by 50% and shipped all projects ahead of schedule.',
+      impactMetrics: [
+        { label: 'Load Time Reduction', value: '50%' },
+        { label: 'Lighthouse Score', value: '90+' },
+        { label: 'On-time Delivery', value: '100%' }
+      ],
       tech: ['HTML', 'CSS', 'JavaScript', 'Web Design'],
       achievements: [
         {
@@ -126,6 +190,11 @@ const ExperienceSection = () => {
       location: 'Remote',
       type: 'Internship',
       roleHighlight: 'Built 3+ production ML models with 88%+ accuracy and faster data pipelines.',
+      impactMetrics: [
+        { label: 'Models Delivered', value: '3+' },
+        { label: 'Model Accuracy', value: '88%+' },
+        { label: 'Prep Time Saved', value: '-70%' }
+      ],
       tech: ['Python', 'TensorFlow', 'Machine Learning', 'AI'],
       achievements: [
         {
@@ -216,6 +285,16 @@ const ExperienceSection = () => {
                     <span className="text-accent-green font-bold">→ Role Impact:</span> {exp.roleHighlight}
                   </p>
                 </div>
+                {exp.impactMetrics && (
+                  <div className="grid grid-cols-3 gap-2 mb-4">
+                    {exp.impactMetrics.map((metric, metricIndex) => (
+                      <div key={metricIndex} className="rounded-lg border border-white/10 bg-white/5 p-2 text-center">
+                        <div className="text-sm font-bold text-accent-green">{metric.value}</div>
+                        <div className="text-[11px] text-text-muted">{metric.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2">
                   {exp.tech.map((tech, i) => (

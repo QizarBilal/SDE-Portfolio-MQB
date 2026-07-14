@@ -11,8 +11,9 @@ const EducationSection = () => {
       university: 'Anna University',
       location: 'Vaniyambadi, India',
       period: 'November 2022 - May 2026',
-      gpa: '8.89',
+      gpa: '8.95',
       highlights: [
+        'Graduated as Top 2 in Department',
         'Specialized in Data Structures, Algorithms, and System Design',
         'Completed advanced courses in Machine Learning and AI',
         'Active participant in technical clubs and coding competitions'

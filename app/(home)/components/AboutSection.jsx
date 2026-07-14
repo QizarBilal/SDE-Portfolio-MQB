@@ -4,10 +4,10 @@ import { motion, useInView } from 'framer-motion'
 
 const AboutSection = () => {
   const stats = [
-    { label: 'CGPA', value: '8.8+' },
+    { label: 'CGPA', value: '8.95' },
+    { label: 'Department Rank', value: 'Top 2' },
     { label: 'Real Projects', value: '10+' },
-    { label: 'Internships', value: '4+' },
-    { label: 'Years Engineering', value: '4+' },
+    { label: 'Professional Roles', value: '5+' },
   ]
 
   const engineeringFocus = [
