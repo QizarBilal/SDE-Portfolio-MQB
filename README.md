@@ -1,228 +1,146 @@
-![Thumbnail](images/Thumbnail.png)
+<div align="center">
 
-# World-Class SDE Portfolio 🚀
+# Mohammed Qizar Bilal — SDE Portfolio
 
-**Mohammed Qizar Bilal - Software Development Engineer**
+### An engineering record, presented like a product.
 
-> Engineered, not decorated.
+[**Enter the live portfolio →**](https://qizar-bilal.vercel.app)
 
-A premium black-themed portfolio designed specifically for Software Development Engineers. Built with Next.js, featuring terminal aesthetics, glass morphism, and engineering-focused content presentation.
+![Next.js](https://img.shields.io/badge/Next.js-14-0B0D10?style=flat-square&logo=nextdotjs)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-0B0D10?style=flat-square&logo=tailwindcss&logoColor=38BDF8)
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-0B0D10?style=flat-square&logo=vercel)
 
-## 🎨 Design Philosophy
+</div>
 
-- **Black Glass Theme**: Deep matte blacks (#0B0D10) with glass panels (#111418)
-- **Engineering First**: Every section focuses on technical credibility
-- **Premium Restraint**: No gradients everywhere, no neon nonsense
-- **Inspired By**: GitHub × Stripe × Linear × Vercel
+![Current deployed portfolio experience](images/live-portfolio.png)
 
-## ✨ Features
-
-### 🔧 Technical Stack
-- **Next.js 14+**: App Router with React Server Components
-- **Tailwind CSS**: Custom glass utilities and design system
-- **Framer Motion**: Smooth, performant animations
-- **React Icons**: HeroIcons & FontAwesome integration
-- **TypeScript Ready**: Type-safe development
-
-### 📐 Architecture
-- **Single-Scroll Design**: No page reloads, engineered UX
-- **Persistent Sidebar**: Always accessible navigation
-- **Responsive**: Mobile-first with desktop excellence
-- **Performance**: Optimized animations, lazy loading, sub-2s loads
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or later)
-- [Git](https://git-scm.com/)
-
-### Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/QizarBilal/portfolio-website.git
-   cd portfolio-website
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Add your assets to `public/` folder:
-   - `avatar.jpg` - Sidebar profile photo (400x400px)
-   - `portrait.jpg` - Hero section image (600x600px, optional)
-   - `resume.pdf` - Your resume
-   - `logo.png` - Site favicon
-
-4. Start development server:
-
-   ```bash
-   npm run dev
-   ```
-
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## 📁 Project Structure
-
-```
-Portfolio-2026/
-├── app/
-│   ├── (home)/
-│   │   ├── page.jsx                 # Main landing page
-│   │   └── components/
-│   │       ├── TerminalHero.jsx     # Terminal-style hero
-│   │       ├── AboutSection.jsx     # SDE identity & stats
-│   │       ├── ExperienceSection.jsx # Problem→Action→Impact
-│   │       ├── ProjectsSection.jsx  # Case study modals
-│   │       ├── SkillsSection.jsx    # Engineering stack
-│   │       ├── ResumeSection.jsx    # Resume preview
-│   │       └── ContactSection.jsx   # Contact info
-│   ├── globals.css                  # Black glass design system
-│   └── layout.js                    # Root layout with sidebar
-├── components/
-│   ├── Sidebar/                     # Persistent navigation
-│   └── ui/                          # Reusable components
-└── public/                          # Static assets
-```
-
-## 🎨 Customization Guide
-
-### Update Personal Information
-
-**In `components/Sidebar/index.jsx`:**
-- Change name, role, and location
-
-**In `app/(home)/components/ContactSection.jsx`:**
-- Update email, LinkedIn, GitHub links
-
-### Add Your Projects
-
-Edit `app/(home)/components/ProjectsSection.jsx`:
-
-```javascript
-const projects = [
-  {
-    name: 'Your Project',
-    category: 'System|ML|Platform',
-    status: 'Production-ready',
-    problem: 'What problem did it solve?',
-    approach: 'Your engineering decisions',
-    outcome: 'Measurable results',
-    tech: ['React', 'Python', 'etc'],
-    github: 'https://github.com/...',
-    live: 'https://your-demo.com',
-    metrics: [
-      { label: 'Performance', value: '95%' }
-    ]
-  }
-]
-```
-
-### Update Experience
-
-Edit `app/(home)/components/ExperienceSection.jsx` following the Problem→Action→Impact format.
-
-### Modify Skills
-
-Edit `app/(home)/components/SkillsSection.jsx` to match your tech stack.
-
-## 🎯 Color System
-
-```css
-/* Core Colors */
---base: #0B0D10          /* Background */
---surface: #111418       /* Glass panels */
---accent-green: #10b981  /* Primary accent */
---text-primary: #EDEDED  /* Main text */
---text-muted: #9AA0A6    /* Secondary text */
-
-/* Utility Classes */
-.glass              /* Standard glass effect */
-.glass-strong       /* Stronger glass effect */
-.terminal           /* Terminal styling */
-.text-gradient-green /* Gradient text */
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-
-```bash
-vercel
-```
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## 📱 Sections
-
-1. **Terminal Hero** - Animated commands, CTA buttons
-2. **About** - SDE identity, stats (CGPA, projects, experience)
-3. **Experience** - Internships with impact metrics
-4. **Projects** - Case studies with modals
-5. **Skills** - Engineering stack by category
-6. **Resume** - PDF preview and download
-7. **Contact** - Links and engineering quote
-
-## 📝 Content Guidelines
-
-### Write Like an SDE:
-- ✅ "Reduced API latency by 80% using Redis caching"
-- ❌ "Made the app faster"
-
-### Show Engineering:
-- Use metrics (10K users, 95% uptime)
-- Mention trade-offs and decisions
-- Focus on production systems
-- Highlight scalability
-
-## 🐛 Troubleshooting
-
-**Images not loading?**
-- Ensure files are in `public/` folder
-- Use `/avatar.jpg` not `./avatar.jpg`
-
-**Sidebar missing on mobile?**
-- Click hamburger menu (top left)
-
-**Build errors?**
-```bash
-rm -rf .next node_modules
-npm install
-npm run build
-```
-
-## 📄 License
-
-MIT License
-
-## 🙏 Credits
-
-Designed and built by Mohammed Qizar Bilal  
-Inspired by: GitHub, Stripe, Linear, Vercel
+> This is a working record of how I think about software: establish the problem, make the engineering decision visible, and connect the work to an outcome.
 
 ---
 
-**"Engineering > Everything"**
+## The 30-second tour
 
-*Built with discipline, clarity, and intent.*
-   - `resume.pdf` - Your resume
-   - `logo.png` - Site favicon
+The site turns a conventional résumé into an explorable engineering dossier. A persistent navigation rail keeps the experience grounded while the main canvas moves through professional work, shipped projects, technical strengths, education, and contact paths.
 
-4. Start development server:
+| When a visitor wants to… | The portfolio answers with… |
+|---|---|
+| understand my focus | a terminal-inspired introduction and a direct engineering statement |
+| judge real experience | problem → action → impact narratives with measurable outcomes |
+| inspect my work | project case studies, stacks, links, and delivery context |
+| scan technical range | grouped frontend, backend, AI, data, and platform capabilities |
+| continue the conversation | résumé access and direct professional contact routes |
 
-   ```bash
-   npm run dev
-   ```
+## Why it looks this way
 
+The visual system borrows the discipline of developer tools rather than their decoration.
 
+- **Near-black surfaces** keep attention on evidence and language.
+- **Glass panels** create hierarchy without filling the page with borders.
+- **A single green signal color** marks actions, state, and emphasis.
+- **Terminal moments** introduce personality without becoming a gimmick.
+- **Measured motion** supports navigation instead of competing with content.
 
-![Demo](images/Screenshot_1.png)
+## Experience map
+
+~~~mermaid
+flowchart LR
+    A[First impression] --> B[Engineering identity]
+    B --> C[Professional impact]
+    C --> D[Project evidence]
+    D --> E[Technical range]
+    E --> F[Resume and contact]
+
+    B -. establishes focus .-> D
+    C -. adds credibility .-> E
+    D -. invites deeper review .-> F
+~~~
+
+## Built around evidence
+
+Experience entries follow a deliberate narrative:
+
+~~~text
+Context → Constraint → Engineering action → Measurable impact
+~~~
+
+Projects are presented as engineering decisions rather than thumbnail galleries. Each case study can communicate the underlying problem, the system approach, implementation choices, technologies, outcomes, and inspectable source or product links.
+
+Skills are grouped by the kind of problem they solve. This avoids the familiar wall of logos and makes the breadth of the profile easier to interpret.
+
+## System shape
+
+~~~text
+SDE-Portfolio-MQB/
+├── app/                    Next.js App Router and global styles
+├── components/             Navigation, sections, and reusable UI
+├── lib/                    Shared helpers and content utilities
+├── public/                 Resume, portraits, icons, and static media
+├── images/                 Documentation and genuine product captures
+├── config.js               Portfolio content and configuration
+├── tailwind.config.js      Design tokens and utility extensions
+└── next.config.mjs         Next.js runtime configuration
+~~~
+
+## Request lifecycle
+
+~~~mermaid
+sequenceDiagram
+    participant V as Visitor
+    participant N as Next.js App
+    participant C as Portfolio content
+    participant M as Motion and UI
+
+    V->>N: Open portfolio
+    N->>C: Resolve structured profile content
+    C-->>N: Experience, projects, skills, links
+    N->>M: Render responsive sections
+    M-->>V: Interactive engineering dossier
+    V->>M: Navigate or open a case study
+    M-->>V: Focused detail without losing context
+~~~
+
+## Run it locally
+
+**Requirements:** Node.js 18+ and npm.
+
+~~~bash
+git clone https://github.com/QizarBilal/SDE-Portfolio-MQB.git
+cd SDE-Portfolio-MQB
+npm install
+npm run dev
+~~~
+
+Open [http://localhost:3000](http://localhost:3000). For a production check:
+
+~~~bash
+npm run build
+npm start
+~~~
+
+Before adapting the project, replace personal media in the public directory, review the content configuration, verify every external link, and test the résumé download on desktop and mobile.
+
+## Content principles
+
+1. **Say what changed.** Make the mechanism and result visible.
+2. **Prefer shipped work to adjectives.** Screens, code, metrics, and decisions carry more weight.
+3. **Keep claims inspectable.** Concrete context lets visitors follow the evidence.
+4. **Write for two reading speeds.** Headings support scanning; case studies reward depth.
+5. **Update the story when the work changes.** A portfolio is a living product.
+
+## Delivery
+
+The production experience is hosted on Vercel.
+
+~~~text
+push to main → Vercel build → production checks → live portfolio
+~~~
+
+## Author
+
+Built and maintained by **Mohammed Qizar Bilal**.
+
+[Portfolio](https://qizar-bilal.vercel.app) · [GitHub](https://github.com/QizarBilal) · [LinkedIn](https://www.linkedin.com/in/mohammed-qizar-bilal/)
+
+---
+
+<sub>MIT licensed. Personal résumé, portrait, and biographical content remain personal to the author.</sub>
